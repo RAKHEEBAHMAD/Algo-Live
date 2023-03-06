@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    text-decoration:none;
+    background-color: black;
+}
+
+h1{
+    font-size: 90px;
+    color: white;
+    margin-top:10%;
+    margin-left:10%;
+    margin-right:10%;
+    text-align: center;
+}
+p{
+    font-size:30px;
+    color:white;
+    margin:5%;
+    text-align: center;
+}
+.btn{
+    align-items: center;
+}
+.btn{
+    background-color: pink;
+    border: none;
+    color: black;
+    font-weight: 500;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 10%;
+  }
+.btn a{
+    color: black;
+    background-color: pink;
+    font-style: italic;
+}
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 20px 7%;
+    box-shadow: 0 5px 10px pink;
+}
+.logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: white;
+}
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float:left;
+}
+header .navbar ul li a{
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    display: block;
+}
+header .navbar ul li a:hover{
+    background: white;
+    color: black;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: black;
+    display: none;
+}
+header .navbar ul li:hover >ul{
+    display: initial;
+}
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px){
+    header{
+        padding:10px;
+    }
+    header label{
+        display:initial;
+    }
+    h1{
+        font-size: 26px;
+        color: white;
+        margin-top:20%;
+        margin-left:5%;
+        margin-right:5%;
+        text-align: center;
+    }
+    p{
+        font-size:17px;
+        color:white;
+        margin:5%;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    header .navbar{
+        position:absolute;
+        top:100%;
+        left:0;
+        right:0;
+        background: black;
+        border-top: 1px solid white;
+        display:none;
+    }
+    header .navbar ul li{
+        width:100%;
+    }
+    header .navbar ul li ul{
+        position:relative;
+        width:100%;
+    }
+    header .navbar ul li ul li{
+        background: black;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+    
+    .btn{
+        background-color: pink;
+        border: none;
+        color: black;
+        font-weight: 400;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        
+        cursor: pointer;
+        border-radius: 10px;
+        margin-right: 30%;
+        margin-left:30%;
+        margin-top:5%;
+        margin-bottom:5%;
+
+      }
+      .btn a{
+        color: black;
+        background-color: pink;
+        font-style: italic;
+      }
+
+}
